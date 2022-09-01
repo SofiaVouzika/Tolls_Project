@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Tolls Project</title>
+  </head>
+  <body>
+    <h1>Home Page</h1>
+    <h1>Hi, I am <%= user.firstName  %></h1>
+    <% if (user.admin) { %>
+      <p>Hello Admin</p>
+  <% } %>
+    <div>
+      <a href="/">login</a> | <a href="/interoperability/api/admin/index.ejs">view healthcheck</a>
+    </div>
+      
+    <script type="text/javascript" src="/interoperability/api/admin/index.ejs"></script>
+  </body>
+</html>
